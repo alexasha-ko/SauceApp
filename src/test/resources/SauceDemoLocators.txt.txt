@@ -1,0 +1,18 @@
+// Username field
+By.id("user-name");
+By.xpath(//*[@id="user-name"]);
+By.cssSelector("#user-name");
+
+//Password field
+By.id("password");
+By.xpath(//*[@id="password"]);
+By.cssSelector("#password");
+
+//Login button
+By.id("login-button");
+By.xpath("//*[@value='LOGIN']")
+By.cssSelector("#login-button")
+
+//Image
+By.xpath("//img");
+By.cssSelector(".bot_column");
