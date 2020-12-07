@@ -2,7 +2,7 @@
 <suite name="Local Execution" verbose="5">
     <test name="Smoke">
         <classes>
-            <class name="SauceAppVerifications"/>
+            <class name="tests.TestCartPage"/>
 
         </classes>
     </test>
