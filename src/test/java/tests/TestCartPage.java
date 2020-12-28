@@ -4,12 +4,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import utils.CapabilitiesGenerator;
 import webpages.CartPage;
 import webpages.HomePage;
 import webpages.LoginPage;
-import java.util.concurrent.TimeUnit;
 
-public class TestCartPage {
+
+public class TestCartPage extends BaseTest{
     WebDriver driver;
     LoginPage objLogin;
     HomePage objHomePage;
@@ -17,10 +18,7 @@ public class TestCartPage {
 
     @BeforeTest
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.get("https://www.saucedemo.com/index.html");
+        driver = new ChromeDriver(CapabilitiesGenerator.getChromeOptions());
     }
 
     @Test
