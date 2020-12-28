@@ -12,9 +12,9 @@ public class CapabilitiesGenerator {
         if (os.contains("win")) {
             System.setProperty("webdriver.chrome.driver", driverPath + "/webdrivers/chromedriver.exe");
         } else if (os.contains("mac")) {
-            System.setProperty("webdriver.chrome.driver", driverPath + "/mac/chromedriver-mac");
+            System.setProperty("webdriver.chrome.driver", driverPath + "/mac/chromedriver");
         } else {
-            System.setProperty("webdriver.chrome.driver", driverPath + "/linux/chromedriver-linux");
+            System.setProperty("webdriver.chrome.driver", driverPath + "/linux/chromedriver");
         }
         options.addArguments("--ignore-certificate-errors");
         options.addArguments("--disable-popup-blocking");
