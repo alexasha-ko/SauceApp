@@ -18,7 +18,10 @@ public class TestCartPage extends BaseTest{
 
     @BeforeTest
     public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/linux/chromedriver");
         driver = new ChromeDriver(CapabilitiesGenerator.getChromeOptions());
+        driver.get("https://www.saucedemo.com/index.html");
+
     }
 
     @Test
